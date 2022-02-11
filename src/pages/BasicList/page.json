@@ -1,0 +1,391 @@
+{
+  "success": true,
+  "message": "",
+  "data": {
+    "page": { "title": "User Edit", "type": "page" },
+    "layout": {
+      "tabs": [
+        {
+          "name": "basic",
+          "title": "Basic",
+          "data": [
+            {
+              "title": "Username",
+              "dataIndex": "username",
+              "key": "username",
+              "type": "text",
+              "disabled": true
+            },
+            {
+              "title": "Display Name",
+              "dataIndex": "display_name",
+              "key": "display_name",
+              "type": "text"
+            },
+            {
+              "title": "Group",
+              "dataIndex": "groups",
+              "key": "groups",
+              "type": "tree",
+              "data": [
+                {
+                  "id": 93,
+                  "parent_id": 0,
+                  "name": "Group 0011",
+                  "create_time": "2020-11-02T16:11:24+08:00",
+                  "delete_time": null,
+                  "status": 1,
+                  "value": 93,
+                  "title": "Group 0011",
+                  "depth": 1
+                },
+                {
+                  "id": 92,
+                  "parent_id": 0,
+                  "name": "Group 0011",
+                  "create_time": "2020-11-02T16:11:24+08:00",
+                  "delete_time": null,
+                  "status": 1,
+                  "value": 92,
+                  "title": "Group 0011",
+                  "depth": 1
+                },
+                {
+                  "id": 86,
+                  "parent_id": 0,
+                  "name": "wwwww1111",
+                  "create_time": "2021-11-21T09:05:47+08:00",
+                  "delete_time": null,
+                  "status": 1,
+                  "value": 86,
+                  "title": "wwwww1111",
+                  "depth": 1,
+                  "children": [
+                    {
+                      "id": 89,
+                      "parent_id": 86,
+                      "name": "7777777",
+                      "create_time": "2021-12-01T09:25:57+08:00",
+                      "delete_time": null,
+                      "status": 1,
+                      "value": 89,
+                      "title": "7777777",
+                      "depth": 2,
+                      "children": [
+                        {
+                          "id": 90,
+                          "parent_id": 89,
+                          "name": "666666666",
+                          "create_time": "2021-12-17T15:32:53+08:00",
+                          "delete_time": null,
+                          "status": 1,
+                          "value": 90,
+                          "title": "666666666",
+                          "depth": 3
+                        }
+                      ]
+                    },
+                    {
+                      "id": 88,
+                      "parent_id": 86,
+                      "name": "4122123",
+                      "create_time": "2021-12-01T09:25:27+08:00",
+                      "delete_time": null,
+                      "status": 1,
+                      "value": 88,
+                      "title": "4122123",
+                      "depth": 2
+                    }
+                  ]
+                },
+                {
+                  "id": 84,
+                  "parent_id": 0,
+                  "name": "mysql12342",
+                  "create_time": "2021-11-10T11:11:46+08:00",
+                  "delete_time": null,
+                  "status": 1,
+                  "value": 84,
+                  "title": "mysql12342",
+                  "depth": 1,
+                  "children": [
+                    {
+                      "id": 87,
+                      "parent_id": 84,
+                      "name": "1233311112",
+                      "create_time": "2021-12-01T09:24:32+08:00",
+                      "delete_time": null,
+                      "status": 1,
+                      "value": 87,
+                      "title": "1233311112",
+                      "depth": 2
+                    }
+                  ]
+                },
+                {
+                  "id": 82,
+                  "parent_id": 0,
+                  "name": "去吃大白兔奶糖",
+                  "create_time": "2021-10-25T10:50:09+08:00",
+                  "delete_time": null,
+                  "status": 1,
+                  "value": 82,
+                  "title": "去吃大白兔奶糖",
+                  "depth": 1
+                },
+                {
+                  "id": 80,
+                  "parent_id": 0,
+                  "name": "lgzzz777",
+                  "create_time": "2021-08-31T17:56:54+08:00",
+                  "delete_time": null,
+                  "status": 1,
+                  "value": 80,
+                  "title": "lgzzz777",
+                  "depth": 1
+                },
+                {
+                  "id": 79,
+                  "parent_id": 0,
+                  "name": "liningGroup",
+                  "create_time": "2021-08-25T15:55:20+08:00",
+                  "delete_time": null,
+                  "status": 1,
+                  "value": 79,
+                  "title": "liningGroup",
+                  "depth": 1,
+                  "children": [
+                    {
+                      "id": 81,
+                      "parent_id": 79,
+                      "name": "测试1233",
+                      "create_time": "2021-09-23T11:59:04+08:00",
+                      "delete_time": null,
+                      "status": 1,
+                      "value": 81,
+                      "title": "测试1233",
+                      "depth": 2
+                    }
+                  ]
+                },
+                {
+                  "id": 78,
+                  "parent_id": 0,
+                  "name": "admin99",
+                  "create_time": "2021-08-23T13:58:39+08:00",
+                  "delete_time": null,
+                  "status": 1,
+                  "value": 78,
+                  "title": "admin99",
+                  "depth": 1,
+                  "children": [
+                    {
+                      "id": 83,
+                      "parent_id": 78,
+                      "name": "测试啦啦啦fsd",
+                      "create_time": "2021-11-02T14:36:53+08:00",
+                      "delete_time": null,
+                      "status": 1,
+                      "value": 83,
+                      "title": "测试啦啦啦fsd",
+                      "depth": 2
+                    }
+                  ]
+                },
+                {
+                  "id": 76,
+                  "parent_id": 0,
+                  "name": "排球testttt",
+                  "create_time": "2021-07-01T14:09:12+08:00",
+                  "delete_time": null,
+                  "status": 1,
+                  "value": 76,
+                  "title": "排球testttt",
+                  "depth": 1,
+                  "children": [
+                    {
+                      "id": 77,
+                      "parent_id": 76,
+                      "name": "report",
+                      "create_time": "2021-07-20T15:28:31+08:00",
+                      "delete_time": null,
+                      "status": 1,
+                      "value": 77,
+                      "title": "report",
+                      "depth": 2
+                    }
+                  ]
+                },
+                {
+                  "id": 75,
+                  "parent_id": 0,
+                  "name": "中文测试234",
+                  "create_time": "2021-06-21T16:20:28+08:00",
+                  "delete_time": null,
+                  "status": 1,
+                  "value": 75,
+                  "title": "中文测试234",
+                  "depth": 1
+                },
+                {
+                  "id": 72,
+                  "parent_id": 0,
+                  "name": "test111",
+                  "create_time": "2021-06-10T13:14:26+08:00",
+                  "delete_time": null,
+                  "status": 1,
+                  "value": 72,
+                  "title": "test111",
+                  "depth": 1,
+                  "children": [
+                    {
+                      "id": 73,
+                      "parent_id": 72,
+                      "name": "test112",
+                      "create_time": "2021-06-10T13:14:34+08:00",
+                      "delete_time": null,
+                      "status": 1,
+                      "value": 73,
+                      "title": "test112",
+                      "depth": 2,
+                      "children": [
+                        {
+                          "id": 74,
+                          "parent_id": 73,
+                          "name": "test113",
+                          "create_time": "2021-06-10T13:14:42+08:00",
+                          "delete_time": null,
+                          "status": 1,
+                          "value": 74,
+                          "title": "test113",
+                          "depth": 3
+                        }
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "id": 71,
+                  "parent_id": 0,
+                  "name": "父节点测试组",
+                  "create_time": "2021-04-11T18:44:05+08:00",
+                  "delete_time": null,
+                  "status": 1,
+                  "value": 71,
+                  "title": "父节点测试组",
+                  "depth": 1
+                },
+                {
+                  "id": 70,
+                  "parent_id": 0,
+                  "name": "最高权限组AA",
+                  "create_time": "2021-04-09T10:05:23+08:00",
+                  "delete_time": null,
+                  "status": 1,
+                  "value": 70,
+                  "title": "最高权限组AA",
+                  "depth": 1
+                },
+                {
+                  "id": 69,
+                  "parent_id": 0,
+                  "name": "Group 001",
+                  "create_time": "2020-11-24T15:25:11+08:00",
+                  "delete_time": null,
+                  "status": 1,
+                  "value": 69,
+                  "title": "Group 001",
+                  "depth": 1
+                },
+                {
+                  "id": 68,
+                  "parent_id": 0,
+                  "name": "Group 0033",
+                  "create_time": "2020-11-02T16:11:24+08:00",
+                  "delete_time": null,
+                  "status": 1,
+                  "value": 68,
+                  "title": "Group 0033",
+                  "depth": 1
+                },
+                {
+                  "id": 53,
+                  "parent_id": 0,
+                  "name": "Admin Group",
+                  "create_time": "2020-09-21T00:10:30+08:00",
+                  "delete_time": null,
+                  "status": 1,
+                  "value": 53,
+                  "title": "Admin Group",
+                  "depth": 1,
+                  "children": [
+                    {
+                      "id": 85,
+                      "parent_id": 53,
+                      "name": "gaoyang",
+                      "create_time": "2021-11-12T11:06:01+08:00",
+                      "delete_time": null,
+                      "status": 1,
+                      "value": 85,
+                      "title": "gaoyang",
+                      "depth": 2
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "title": "Create Time",
+              "dataIndex": "create_time",
+              "key": "create_time",
+              "type": "datetime"
+            },
+            {
+              "title": "Update Time",
+              "dataIndex": "update_time",
+              "key": "update_time",
+              "type": "datetime"
+            },
+            {
+              "title": "Status",
+              "dataIndex": "status",
+              "key": "status",
+              "type": "switch",
+              "data": [
+                { "title": "Enabled", "value": 1 },
+                { "title": "Disabled", "value": 0 }
+              ]
+            }
+          ]
+        }
+      ],
+      "actions": [
+        {
+          "name": "actions",
+          "title": "Actions",
+          "data": [
+            { "component": "button", "text": "Reset", "type": "dashed", "action": "reset" },
+            { "component": "button", "text": "Cancel", "type": "default", "action": "cancel" },
+            {
+              "component": "button",
+              "text": "Submit",
+              "type": "primary",
+              "action": "submit",
+              "uri": "/api/admins/206",
+              "method": "put"
+            }
+          ]
+        }
+      ]
+    },
+    "dataSource": {
+      "id": 206,
+      "username": "admin0",
+      "display_name": "",
+      "create_time": "2020-10-22T15:38:51+08:00",
+      "update_time": "2020-10-31T13:28:21+08:00",
+      "status": 1,
+      "groups": [53]
+    }
+  }
+}
