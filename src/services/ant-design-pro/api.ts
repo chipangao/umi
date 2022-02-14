@@ -1,12 +1,20 @@
 // @ts-ignore
 /* eslint-disable */
 import { request } from 'umi';
+import { MenuDataItem } from '@ant-design/pro-layout';
 
 /** 获取当前的用户 GET /api/currentUser */
 export async function currentUser(options?: { [key: string]: any }) {
   return request<{
     data: API.CurrentUser;
   }>('/api/currentUser', {
+    method: 'GET',
+    ...(options || {}),
+  });
+}
+
+export async function currentMenu(options?: { [key: string]: any }) {
+  return request<MenuDataItem[]>('http://localhost:8002/api/menus/backend?X-API-KEY=antd', {
     method: 'GET',
     ...(options || {}),
   });

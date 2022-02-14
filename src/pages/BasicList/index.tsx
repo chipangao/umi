@@ -1,10 +1,10 @@
 import { useState, useEffect } from 'react';
 import { Table, Space, Row, Col, Card, Pagination, Modal as AntdModal,message,Tooltip,Button,Form,InputNumber} from 'antd';
-import { useRequest,useIntl,history } from 'umi';
+import { useRequest,useIntl,history,useLocation } from 'umi';
 import { PageContainer,FooterToolbar } from '@ant-design/pro-layout';
 import { ExclamationCircleOutlined, SearchOutlined } from '@ant-design/icons';
 import { stringify } from 'query-string'
-import { useToggle } from 'ahooks';
+import { useToggle,useUpdateEffect } from 'ahooks';
 import { BasicListApi } from './data';
 import { submitFieldsAdaptor } from './helper';
 import ColumnsBuilder from './builder/ColumnBuilder';
@@ -27,12 +27,13 @@ const index = () => {
   const [selectColums,setTableCoiumns]=useState<BasicListApi.Field[]>([]);
   const {confirm} = AntdModal;
   const [searchForm] = Form.useForm();
+  const location = useLocation();
   //const init = useRequest('https://public-api-v2.aspirantzhang.com/api/admins?X-API-KEY=antd')
   //init data
   //`http://localhost:8002/api/admins?X-API-KEY=antd${pageQuery}&order=${sortQuery}`,
   const init = useRequest<{ data: BasicListApi.ListData }>((values:any)=>{
     return {
-      url: `http://localhost:8002/api/admins?X-API-KEY=antd${pageQuery}&order=${sortQuery}`,
+      url: `http://localhost:8002${location.pathname.replace('basic-list','')}?X-API-KEY=antd${pageQuery}&order=${sortQuery}`,
       params:values,
       paramsSerializer: function (params:any) {
         return stringify(params,{arrayFormat:'comma',skipEmptyString:true,skipNull:true});
@@ -55,7 +56,7 @@ const index = () => {
       },
       { 
         manual: true,
-        onSuccess: (data)=>{
+        onSuccess: (data:any)=>{
           message.success({
             content:data.message,
             key:'process',
@@ -64,14 +65,15 @@ const index = () => {
         },
         formatResult: (res:any)=>{
           return res
-        }
-      },
+        },
+        throttleInterval: 1000,
+      },  
   );
   const data = init?.data;
   const loading = init.loading;
   //Table data
   const dataSource = data?.dataSource;
-  const mapdata = dataSource?.map((item) => {
+  const mapdata = dataSource?.map((item:any) => {
     return item;
   });
   //Table columns
@@ -83,9 +85,9 @@ const index = () => {
   const per_page = data?.meta.per_page;
   const intl = useIntl();
 
-  useEffect(() => {
+  useUpdateEffect(() => {
     init.run();
-  }, [pageQuery, perPage, sortQuery, modalUri]);
+  }, [pageQuery, perPage, sortQuery, modalUri,location.pathname]);
   useEffect(() =>{
     if(columns){
       setTableCoiumns(columns)

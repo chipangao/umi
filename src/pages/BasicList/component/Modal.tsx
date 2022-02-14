@@ -29,14 +29,13 @@ const Modal = ({
       hideModal();
     }
   });
- 
+  
   const request = useRequest(
     (values: any) => {
+      message.loading({ content: 'Processing...', key: 'process', duration: 0 });
       const { uri, method, ...formValues } = values;
-      const url = `http://localhost:8002${uri}`;
-      message.loading({content:'Processing...',key:'process',duration:0})
       return {
-        url,
+        url: `http://localhost:8002${uri}`,
         method,
         data: {
           ...submitFieldsAdaptor(formValues),
@@ -44,18 +43,19 @@ const Modal = ({
         },
       };
     },
-    { 
+    {
       manual: true,
-      onSuccess: (data)=>{
+      onSuccess: (data) => {
         message.success({
-          content:data.message,
-          key:'process',
-        })
+          content: data.message,
+          key: 'process',
+        });
         hideModal(true);
       },
-      formatResult: (res:any)=>{
-        return res
-      }
+      formatResult: (res: any) => {
+        return res;
+      },
+      throttleInterval: 1000,
     },
   );
 
